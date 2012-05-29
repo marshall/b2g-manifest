@@ -3,8 +3,11 @@
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com/" />
-  <remote name="b2g"
-          fetch="git://github.com/mozilla-b2g/" />
+  <remote  name="b2g"
+           fetch="git://github.com/mozilla-b2g/" />
+  <remote  name="marshall"
+           fetch="file:///Users/mculpepper/Code/" />
+
   <default revision="master"
            remote="aosp"
            sync-j="4" />
@@ -18,6 +21,7 @@
   <project path="gecko" name="mozilla-central" remote="b2g" revision="master" />
   <project path="gonk-misc" name="gonk-misc" remote="b2g" revision="master" />
   <project path="rilproxy" name="rilproxy" remote="b2g" revision="master" />
+  <project path="hardware/ril" name="platform_hardware_ril" remote="marshall" revision="queryAvailableNetworks"/>
 
   <!-- Stock Android things -->
   <project path="abi/cpp" name="platform/abi/cpp" />
@@ -73,7 +77,6 @@
   <project path="frameworks/support" name="platform/frameworks/support" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" />
-  <project path="hardware/ril" name="platform/hardware/ril" />
   <project path="libcore" name="platform/libcore" />
   <project path="ndk" name="platform/ndk" />
   <project path="prebuilt" name="platform/prebuilt" />
