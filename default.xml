@@ -3,10 +3,10 @@
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com/" />
-  <remote  name="b2g"
-           fetch="git://github.com/mozilla-b2g/" />
-  <remote  name="marshall"
-           fetch="file:///Users/mculpepper/Code/" />
+  <remote name="b2g"
+          fetch="git://github.com/mozilla-b2g/" />
+  <remote name="marshall"
+          fetch="git://github.com/marshall/" />
 
   <default revision="master"
            remote="aosp"
